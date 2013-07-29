@@ -1,0 +1,24 @@
+<div data-role="page">
+    <div data-role="header" data-theme="e">
+        <h1>Log In</h1>
+    </div>
+
+    <div data-role="content" data-theme="e">
+        <form id="login" method="post" action="http://192.168.0.88:3000/api/users/sign_in.json">
+        <fieldset>
+            <label for="email" class="ui-hidden-accessible">Username:</label>
+            <input name="email" id="textinput-hide" placeholder="Username" value="" type="text">
+            <label for="password" class="ui-hidden-accessible">Password:</label>
+            <input name="password" id="password-hide" placeholder="Password" value="" autocomplete="off" type="password">
+            <input value="Submit" data-mini="true" data-theme="a" type="submit">
+            <a href="#" data-role="button" data-mini="true" data-rel="back" data-theme="c">Cancel</a>
+        </fieldset>
+        </form>
+    </div>
+</div>
+
+<script>
+    $('form#login').on('ajax:success',function(event, data, status, xhr) {
+        alert('yay');
+    });
+</script>
