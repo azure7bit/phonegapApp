@@ -22,13 +22,13 @@ var mainapp = {
             "<div class='header'><h1>Register</h1></div>" +
             "<form action='_self' method ='post'>" +
             "<label>Name</label>" +
-            "<input type='text'/><br />" + 
+            "<input type='text' name='username' id='username'/><br />" + 
             "<label>Email</label>" +
             "<input type='text'/><br />" + 
             "<label>Password</label>" +
-            "<input type='text'/><br />" + 
+            "<input type='password' name='password' id='password'/><br />" + 
             "<label>Password Confirmation</label>" +
-            "<input type='text'/><br />" + 
+            "<input type='password' name='passconfirm' id='passconfirm'/><br />" + 
             "<input type='submit' value='submit'/>" +
             "</form>" +
             "<br /> <p><a class='back' href='#'>Go Home</a>"
